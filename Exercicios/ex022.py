@@ -1,0 +1,20 @@
+'''print('Manipulando nomes')
+nome = str(input('Digite seu nome completo: '))
+mai = nome.upper()
+minu = nome.lower()
+qtd_ltr = len(nome.replace(' ', ''))
+nome1 = len(nome.split()[0])
+print('{} em maiúsculas: {}'.format(nome, mai))
+print('{} em minúsculas {}'.format(nome, minu))
+print('{} tem {} letras desconsiderando os espaços'.format(nome, qtd_ltr))
+print('{} tem {} letras no primeiro nome'.format(nome, nome1))'''
+
+nome = str(input('Digite seu nome completo: ')).strip()
+print('Analisando seu nome...')
+print('Seu nome em maiúsculas é {}'.format(nome.upper()))
+print('Seu nome em minúsculas é {}'.format(nome.lower()))
+print('Seu nome tem ao todo {} letras'.format(len(nome) - nome.count(' ')))
+# print('Seu primeiro nome tem {} letras'.format(nome.find(' ')))
+separa = nome.split()
+print('Seu primeiro nome é {} e ele tem {} letras'.format(separa[0], len(separa[0])))
+
